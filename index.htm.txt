@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Register</title>
+        <script>
+            let xml = new XMLHttpRequest();
+            function reg() {
+                let email = document.getElementById('email').value;
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+                let data = [];
+                data.push(email, username, password);
+                
+                xml.open('POST', 'reg', true);
+                xml.send(data);
+
+                xml.onreadystatechange = function() {
+                if (xml.readyState === XMLHttpRequest.DONE) {
+                    if (xml.status === 201) {
+                        document.write("Account created successfully");
+                    } else if (xml.status === 400) {
+                        document.write("Account already exists");
+                    } else {
+                        console.log("Error:", xml.status);
+                    }
+                }};
+            }
+
+            
+        </script>
+    </head>
+    <body>
+          <font>Email:</font><input id = "email" /><br />
+          <font>Username:</font><input id = "username" /><br />
+          <font>Password:</font><input id = "password" type = "password"/><br />
+          <button onclick = "reg()">Submit</button>
+    </body>
+</html>
