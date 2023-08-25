@@ -12,6 +12,12 @@
 <label style= "color:hotpink">
 <form action="action_page.php" method="post">
 
+<div class="container">
+    <label for="gmail"><b>Entr Gmail</b></label>
+    <input type="text" placeholder="Enter G-Mail" name="gmail" required>
+<div>
+<br />
+
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -34,10 +40,6 @@
   </div>
 <br />
 </form>
-<button style= "color:hotpink">
-<label>Please input your e-mail here.</label>
-<br />
-<input type="e-mail" name="e-mail" pattern="[a-z0-9. _%+-]+@[a-z0-9. -]+\. [a-z]{2,}$" title="please enter valid email [person@example.com].">
 
                                      
 
