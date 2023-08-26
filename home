@@ -1,0 +1,19 @@
+<html>
+  <body> 
+  <body style="background-color:lightgray;" <disabled>
+    <center>
+      <h1 style="font-family: sans-serif; color:hotpink;">🏡<div>Home</h1><label for="Name"></label>
+      <input type="text" id="Name" name="Name" placeholder="Search.." style = "border-radius:10px;" style = "color:hotpink" />
+<style>
+input {
+padding:10px;
+background-color:transparent;
+font:10px;
+
+
+}
+</style>
+
+  </center>
+  </body> 
+</html>
