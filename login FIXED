@@ -1,53 +1,75 @@
-<html>
-<body> 
-<center>
-<h style= "color:HOTPINK;"> 
-<h1><img src = "https://images-ext-1.discordapp.net/external/-zxvwIdhIlEjXiXWsZ-hdaIrMeU84sh11rtLrLFN8xY/https/ov12-engine.flamingtext.com/netfu/tmp28000/coollogo_com-7651687.gif?width=426&height=83" /> <h style="font-family: sans-serif"><div>Log In</h1></h>
+```<html>
+    <head>
+    <center>
+        <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScottHilton&#039;s | yourSpace</title>
+        <h style= "color:HOTPINK;"> 
+<h1><img src = "https://media.discordapp.net/attachments/1143627982615871559/1145229377802608680/coollogo_com-29809535.gif?width=326&height=94" /> <h style="font-family: sans-serif"><hr><div>Sign Up</h1></h>
 </style>
+<style>
+    font{
+        color:hotpink;
+    style="font-family: sans-serif
+  }
+    </style>
+    <head>
+   <title>Sign Up | yourSpace</title>
 
+</head>
 
-<container>
-</container>
-<label style=" font-family: sans-serif">
-<label style= "color:hotpink">
-<form action="action_page.php" method="post">
+        <script>
+            let xml = new XMLHttpRequest();
+            function reg() {
+                let email = document.getElementById('email').value;
+               
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+                let data = [];
+                data.push(email, username, password);
+                
+                xml.open('POST', 'reg', true);
+                xml.send(data);
 
+                xml.onreadystatechange = function() {
+                if (xml.readyState === XMLHttpRequest.DONE) {
+                    if (xml.status === 201) {
+                        document.write("Account created successfully");
+                    } else if (xml.status === 400) {
+                        document.write("Account already exists");
+                    } else {
+                        console.log("Error:", xml.status);
+                    }
+                }};
+            }
 
-<br />
-<label for=email><b>Entr Email</b></label>
-<input type=email name=email pattern=[a-z0-9. _%+-]+@[a-z0-9. -]+\. [a-z]{2,}$ title=please enter valid email [someone@example.com].
-placeholder="Enter Email">
-
-<div>
-<br />
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-<div>
-<br />
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-<div>
-<br />
-    <button type="submit">Login</button>     <button type="button" class="cancelbtn">Cancel</button>
-    <label>
-   <div>
-<br />   <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-<br />
-  <div class="container" style="background-color:Transparent">
-<div>
-    <span class="psw">Forgot <a href="#">password</a></span>
-  </div>
-<br />
-</form>
-<button style= "color:hotpink">
-
-                                     
-
-
-</h>
-</center>
-</body> 
-</html>
+        </script>
+    </head>
+    <body>
+        <style>
+            font 
+            {
+            font-family: sans-serif;
+            }
+            </style>
+          <font> Email </font><input id = "email" placeholder="someone@example.com"/><br />
+    <br />
+          <font>UserN</font><input id = "yourSpaceUser&#039" placeholder="'yourSpaceUser'"/><br />
+    <br />      
+          <font>PassW</font><input id = "password" type = "password" placeholder="Password"/><br />
+    <br />      
+          <button onclick = "reg()">[ Submit ]</button>
+          <style>
+        button{
+        color:Hotpink;
+        background-color:transparent;
+        border-radius: 10px;
+        border-color:transparent;
+        }
+            </style>
+        
+   </center>
+   </body>
+</html>```
